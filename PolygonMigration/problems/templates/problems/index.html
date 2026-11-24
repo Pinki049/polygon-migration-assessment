@@ -381,6 +381,9 @@
             searchInput.addEventListener('blur', function() {
                 setTimeout(hideDropdown, 200);
             });
+                dropdown.addEventListener('mousedown', function(e) {
+                e.preventDefault();
+            });
         }
         
         // Initialize display if the section exists
